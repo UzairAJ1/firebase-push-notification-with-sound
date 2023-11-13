@@ -4,12 +4,12 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compa
 
 // Initialize the Firebase app in the service worker by passing the generated config
 const firebaseConfig = {
-  apiKey: "AIzaSyD3bo07ULA23O_SsAjHZynrGBfMNQb64g8",
-  authDomain: "himenus-a55e1.firebaseapp.com",
-  projectId: "himenus-a55e1",
-  storageBucket: "himenus-a55e1.appspot.com",
-  messagingSenderId: "547632849413",
-  appId: "1:547632849413:web:0a5e4f17fcf776f016326c"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId
 };
 firebase.initializeApp(firebaseConfig);
 
